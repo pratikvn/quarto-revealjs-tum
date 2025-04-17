@@ -20,7 +20,7 @@ quarto install extension pratikvn/quarto-revealjs-tum
 
 Alternatively, you can use a
 [Quarto template](https://quarto.org/docs/extensions/starter-templates.html)
-that bundles the **clean** theme plus a .qmd starter document. This is a better
+that bundles the **tum** theme plus a .qmd starter document. This is a better
 option if you are starting a new project from scratch, since it will automatically
 create a new directory with all of the necessary scaffolding in one go. We provide
 two template options.
