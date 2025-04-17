@@ -3,9 +3,9 @@
 A minimalist and elegant presentation theme for Quarto Reveal.js, inspired by
 [Quarto clean](https://github.com/grantmcdermott/quarto-revealjs-clean).
 
-An example of how the template would look like:
+An example of how the template would look like (Click on the image to go to a live demo):
 
-![](clean-title.png "live demo")
+[![](clean-title.png "live demo")](https://pratikvn.github.io/quarto-revealjs-tum/#/title-slide)
 
 ## Use
 
@@ -33,7 +33,7 @@ quarto use template pratikvn/quarto-revealjs-tum
 
 ## Fonts
 
-TUM recommends the [TUM Neue Helvetica font](http://portal.mytum.de/corporatedesign). If you wish, you can set the `mainfont` and `sansfont` with the fonts that you would like to use as shown the [Quarto documentation](https://quarto.org/docs/output-formats/html-themes.html#basic-options)
+TUM recommends the [TUM Neue Helvetica font](http://portal.mytum.de/corporatedesign). If you wish, you can set the `mainfont` and `sansfont` with the fonts that you would like to use as shown in the [Quarto documentation](https://quarto.org/docs/output-formats/html-themes.html#basic-options)
 
 ## Slide overview
 
@@ -45,6 +45,6 @@ You can also add a slide overview using the `.sectionhead` class like so:
 :::
 ```
 
-This produces an overview above the slide as shown below
+This produces an overview above the slide heading as shown below
 
-![](section-head.png "section head")
+[![](section-head.png "section head")](https://pratikvn.github.io/quarto-revealjs-tum/#/example-slide)
