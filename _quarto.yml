@@ -1,0 +1,30 @@
+toc: true
+number-sections: false
+
+# fonts
+mainfont: "TexGyreSchola"
+sansfont: "SourceCodePro"
+
+# code
+code-fold: show
+code-overflow: scroll
+code-line-numbers: true
+
+execute:
+  freeze: auto
+
+format:
+  tum-revealjs:
+    history: true
+    progress: true
+    slide-number: true
+    footer: "Pratik Nayak | Chair of Computational Mathematics | School of
+  Computation, Information and Technology (CIT) | TUM"
+  html-math-method:
+    method: mathjax
+    url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Pratik Nayak
+    orcid: 0000-0002-7961-1159
+    email: pratik.nayak@tum.de
+    affiliations: Technical University of Munich

@@ -6,14 +6,18 @@ html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
-  - name: Your Name
-    orcid: 0000-0000-0000-0000
-    email: <name>@tum.de
+  - name: Pratik Nayak
+    orcid: 0000-0002-7961-1159
+    email: pratik.nayak@tum.de
     affiliations: Technical University of Munich
 date: last-modified
 ---
 
 ## Example slide
+
+::: {.sectionhead}
+Example [Additional Code Summary]{style="opacity:0.25"}
+:::
 
 ### This is a subtitle
 
@@ -31,6 +35,10 @@ can be used with this theme, even if we don't highlight them here.
 
 ## Additional theme classes
 
+::: {.sectionhead}
+[Example]{style="opacity:0.25"} Additional [Code Summary]{style="opacity:0.25"}
+:::
+
 ### Some extra things you can do with the clean theme
 
 Special classes for emphasis
@@ -47,7 +55,7 @@ Cross-references
 ## Code views
 
 ::: {.sectionhead}
-[Outline]{style="opacity:0.25"} Intro [Results Summary]{style="opacity:0.25"}
+[Example Additional]{style="opacity:0.25"} Code [Summary]{style="opacity:0.25"}
 :::
 
 ### A minimalist and elegant presentation theme
@@ -77,6 +85,10 @@ vol = sphere_vol(3)
 ```
 
 ## Summary {#sec-summary}
+
+::: {.sectionhead}
+[Example Additional Code]{style="opacity:0.25"} Summary
+:::
 
 ### A minimalist and elegant presentation theme
 
