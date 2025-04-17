@@ -46,6 +46,10 @@ Cross-references
 
 ## Code views
 
+::: {.sectionhead}
+[Outline]{style="opacity:0.25"} Intro [Results Summary]{style="opacity:0.25"}
+:::
+
 ### A minimalist and elegant presentation theme
 
 C++ code looks like this:

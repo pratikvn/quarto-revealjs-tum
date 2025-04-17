@@ -31,8 +31,20 @@ two template options.
 quarto use template pratikvn/quarto-revealjs-tum
 ```
 
-- Full demo template
+## Fonts
 
-```bash
-quarto use template pratikvn/quarto-revealjs-tum-demo
+TUM recommends the [TUM Neue Helvetica font](http://portal.mytum.de/corporatedesign). If you wish, you can set the `mainfont` and `sansfont` with the fonts that you would like to use as shown the [Quarto documentation](https://quarto.org/docs/output-formats/html-themes.html#basic-options)
+
+## Slide overview
+
+You can also add a slide overview using the `.sectionhead` class like so:  
+
+``` markdown
+::: {.sectionhead}
+[Outline]{style="opacity:0.25"} Intro [Results Summary]{style="opacity:0.25"}
+:::
 ```
+
+This produces an overview above the slide as shown below
+
+![](section-head.png "section head")
