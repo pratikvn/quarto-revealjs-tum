@@ -1,4 +1,3 @@
-
 /*-- scss:defaults --*/
 
 // Custom colours and variables
@@ -82,6 +81,31 @@ $selection-bg: #26351c !default;
     }
   }
 
+}
+
+// add a overview header
+
+.sectionhead {
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  // background-color: $accent4;
+  // border-left: 7px solid;
+  font-size: 0.6em;
+  font-style: italic;
+  line-height: 1.42857143;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 4%;
+  position: fixed;
+  left: 0px !important;
+  margin-top: -0.0em !important;
+  vertical-align: bottom!important;
+  top: -35px !important;
+  right: 5px !important;
 }
 
 
@@ -194,6 +218,8 @@ $selection-bg: #26351c !default;
   pointer-events: auto;
 }
 
+// Slide logo
+
 .reveal .slide-logo {
   display: block;
   position: fixed;
@@ -252,29 +278,6 @@ $selection-bg: #26351c !default;
   margin-right: 5px;
 }
 
-// section
-.sectionhead {
-  color: $presentation-heading-color;
-  font-family: $presentation-heading-font;
-  // background-color: $accent4;
-  // border-left: 7px solid;
-  font-size: 0.6em;
-  font-style: italic;
-  line-height: 1.42857143;
-  display: flex;
-  border-radius: 5px;
-  align-items: center;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: 4%;
-  position: fixed;
-  left: 0px !important;
-  margin-top: -0.0em !important;
-  vertical-align: bottom!important;
-  top: -35px !important;
-  right: 5px !important;
-}
 
 
 // tables
