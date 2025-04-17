@@ -1,15 +1,15 @@
 ---
 title: A title
 subtitle: A subtitle
-format: clean-revealjs
+format: tum-revealjs
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
   - name: Your Name
     orcid: 0000-0000-0000-0000
-    email: alias@email.com
-    affiliations: Your Institution
+    email: <name>@tum.de
+    affiliations: Technical University of Munich
 date: last-modified
 ---
 
@@ -44,19 +44,33 @@ Cross-references
 - `.button` class provides a Beamer-like button, e.g.
 [[Summary]{.button}](#sec-summary)
 
-## Want more?
+## Code views
 
-### See our longer demo slides
+### A minimalist and elegant presentation theme
 
-We've deliberarely kept this template lean, to get you up and running as fast as
-possible.
+C++ code looks like this:
 
-We provide a separate
-[demo template](https://github.com/grantmcdermott/quarto-revealjs-clean-demo),
-with more examples for integrating code, tables, figures, etc.
+```{.cpp}
+template<typename Space>
+class Executor {
+  std::unique_ptr<handle> exec_;
 
-  - See the live demo slides
-  [here](https://grantmcdermott.com/quarto-revealjs-clean-demo/template.html).
+  template<typename Operation>
+  void run(Operation Lambda);
+}
+```
+
+Julia code looks like this:
+
+```{.julia}
+function sphere_vol(r)
+    # julia allows Unicode names (in UTF-8 encoding)
+    # so either "pi" or the symbol π can be used
+    return 4/3*pi*r^3
+end
+
+vol = sphere_vol(3)
+```
 
 ## Summary {#sec-summary}
 
@@ -68,17 +82,11 @@ theme. Here are some options to get you started:
 Add the theme to an existing project.
 
 ```{.bash}
-quarto install extension grantmcdermott/quarto-revealjs-clean
+quarto install extension pratikvn/quarto-revealjs-tum
 ```
 
 ... or, create a new project using this slide deck as a lean template.
 
 ```{.bash}
-quarto use template grantmcdermott/quarto-revealjs-clean
-```
-
-... or, create a new project using the demo slide deck as a full template.
-
-```{.bash}
-quarto use template grantmcdermott/quarto-revealjs-clean-demo
+quarto use template pratik/quarto-revealjs-tum
 ```
