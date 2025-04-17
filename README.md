@@ -15,9 +15,18 @@ commands to get started.
 If you would like to add the **tum** theme to an existing directory:
 
 ```bash
-quarto install extension pratikvn/quarto-revealjs-tum
+quarto add pratikvn/quarto-revealjs-tum
 ```
 
+If something has been updated here, you can also import the changes with the `quarto update` command:
+```bash
+quarto update pratikvn/quarto-revealjs-tum
+```
+
+To remove the extension, use
+```bash
+quarto remove pratikvn/quarto-revealjs-tum
+```
 Alternatively, you can use a
 [Quarto template](https://quarto.org/docs/extensions/starter-templates.html)
 that bundles the **tum** theme plus a .qmd starter document. This is a better
@@ -30,6 +39,14 @@ two template options.
 ```bash
 quarto use template pratikvn/quarto-revealjs-tum
 ```
+
+Finally, in your `.qmd` file you can use the format with
+
+```markdown
+format: tum-revealjs
+```
+
+See the [`template.qmd` file](./template.qmd) file for more details.
 
 ## Fonts
 
