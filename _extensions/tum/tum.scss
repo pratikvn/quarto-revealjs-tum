@@ -1,3 +1,4 @@
+
 /*-- scss:defaults --*/
 
 // Custom colours and variables
@@ -6,8 +7,8 @@ $jet: #003359;
 $accent: #0065BD;
 $accent2: #E37222;
 $accent3: #A2AD00;
-$accent3: #98C6EA;
-$accent4: #64A0C8;
+$accent4: #98C6EA;
+$accent5: #64A0C8;
 // $accent2: #e64173;
 $right-arrow: "\2192"; // Unicode character for right arrow
 
@@ -62,7 +63,7 @@ $selection-bg: #26351c !default;
   .quarto-title-author-email {
     font-style: italic;
     // font-size: 80%;
-    color: $accent4;
+    color: $accent5;
   }
 
   .author,
@@ -166,7 +167,7 @@ $selection-bg: #26351c !default;
 .reveal .slide-menu-button {
   position: fixed;
   top: 6px;
-  right: 0;
+  left: 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -182,7 +183,7 @@ $selection-bg: #26351c !default;
 .reveal .slide-chalkboard-buttons {
   position: fixed;
   top: 12px;
-  right: 24px;
+  left: 24px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -193,24 +194,31 @@ $selection-bg: #26351c !default;
   pointer-events: auto;
 }
 
-// Logo to the bottom-left
-.slide-logo {
-  display: block !important;
-  position: fixed !important;
-  bottom: 0 !important;
-  left: 10px !important;
-  max-width: 150px; // Adjust if necessary
-  max-height: 50px;
-  width: auto !important;
-  color: $body-color !important;
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  z-index: 0;
+  bottom: unset !important;
+  left: unset !important;
+  top: 2px !important;
+  right: 10px !important;
+  max-height: 8% !important;
+  min-height: 8% !important;
 }
 
-// Also need to enforce slide numbers at bottom-right (if logo is present)
+// Slide numbers
+
 .slide-number, .reveal.has-logo .slide-number {
-  bottom: 6px !important;
-  right: 10px !important;
   top: unset !important;
-  color: #777777 !important;
+  right: unset !important;
+  bottom: 10px !important;
+  left: 10px !important;
+  color: #999 !important;
+}
+
+// Hide logo and slide number on the title slide
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
 }
 
 // Beamer-style button link environment
@@ -243,6 +251,31 @@ $selection-bg: #26351c !default;
   content: "▶";
   margin-right: 5px;
 }
+
+// section
+.sectionhead {
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  // background-color: $accent4;
+  // border-left: 7px solid;
+  font-size: 0.6em;
+  font-style: italic;
+  line-height: 1.42857143;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 4%;
+  position: fixed;
+  left: 0px !important;
+  margin-top: -0.0em !important;
+  vertical-align: bottom!important;
+  top: -35px !important;
+  right: 5px !important;
+}
+
 
 // tables
 
@@ -300,7 +333,22 @@ $selection-bg: #26351c !default;
   object-fit: contain;
 }
 
-// Change the relative widths of `output-location: column`. 
+// Progress bar
+
+.reveal .progress {
+  background: $accent4;
+  color: $accent3;
+  height: 1.5%;
+}
+
+// footer
+.reveal .footer{
+  font-size: 0.9em !important;
+  color: $jet;
+  height: 3%;
+}
+
+// Change the relative widths of `output-location: column`.
 // See: https://github.com/grantmcdermott/quarto-revealjs-clean/pull/16
 // Example usage:
 // ```{python}
@@ -326,7 +374,7 @@ $selection-bg: #26351c !default;
 }
 .reveal .columns4060 div.column:not(:first-child) {
   width: 60%;
-}      
+}
 .reveal .columns6040 > div.column:first-child {
   width: 60%;
 }
