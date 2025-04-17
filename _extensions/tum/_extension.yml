@@ -1,0 +1,38 @@
+title: tum
+author: Pratik Nayak
+version: 0.0.1
+quarto-required: ">=1.3.0"
+contributes:
+  formats:
+    revealjs:
+      theme: [default, tum.scss]
+      logo: tum.png
+      title-slide-attributes:
+        data-background-image: tum_clock.png
+        data-background-position: right
+        data-background-size: contain
+      menu:
+        side: left
+      slide-number: true
+      date-format: long
+      html-math-method: mathjax
+      preview-links: auto
+      mouse-wheel: true
+      include-after: |
+        <script type="text/javascript">
+          Reveal.on('ready', event => {
+            if (event.indexh === 0) {
+              document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+            }
+          });
+          Reveal.addEventListener('slidechanged', (event) => {
+            if (event.indexh === 0) {
+              Reveal.configure({ slideNumber: null });
+              document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+            }
+            if (event.indexh === 1) {
+              Reveal.configure({ slideNumber: 'c/t' });
+              document.querySelector("div.has-logo > img.slide-logo").style.display = null;
+            }
+          });
+        </script>
